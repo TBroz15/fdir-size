@@ -1,0 +1,30 @@
+{
+  "name": "fdir-size",
+  "version": "0.0.0",
+  "description": "⚡ Fastest Directory Size Calculator at Sub-second!",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TBroz15/fdir-size.git"
+  },
+  "keywords": [
+    "directory",
+    "size",
+    "fdir",
+    "fast",
+    "directory",
+    "files",
+    "size",
+    "calculate"
+  ],
+  "author": "TBroz15",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TBroz15/fdir-size/issues"
+  },
+  "homepage": "https://github.com/TBroz15/fdir-size#readme"
+}
