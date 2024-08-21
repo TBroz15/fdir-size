@@ -1,4 +1,4 @@
-# fdir-size |⚡ Fastest Directory Size Calculator at Sub-second!
+# fdir-size |⚡ Fastest Directory Size Calculator!
 
 <a href="https://www.buymeacoffee.com/tbroz15" target="_blank"><img src="https://img.shields.io/badge/-buy_me_a_coffee!-gray?logo=buy-me-a-coffee" alt="Buy Me A Coffee" />
 <a href="https://www.npmjs.com/package/fdir-size">
