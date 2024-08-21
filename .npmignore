@@ -3,6 +3,7 @@ ci/
 src/
 esbuild.log
 .releaserc.json
+dist/fdir-size-*
 
 # GitHub
 .github/
@@ -16,3 +17,4 @@ CODE_OF_CONDUCT.md
 tsconfig.json
 .prettierignore
 tests/
+eslint.config.mjs
