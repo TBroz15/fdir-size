@@ -13,8 +13,9 @@ CONTRIBUTING.md
 CODE_OF_CONDUCT.md
 
 # VSCode & Dev Stuff
+tests/
 .vscode/
 tsconfig.json
 .prettierignore
-tests/
+import_map.json
 eslint.config.mjs
