@@ -1,6 +1,6 @@
 {
   "name": "fdir-size",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "⚡ Fastest Directory Size Calculator at Sub-second!",
   "main": "dist/index.js",
   "scripts": {
