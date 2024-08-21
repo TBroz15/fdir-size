@@ -47,7 +47,7 @@ const directoryPromises = directories.map((path) =>
   mkdir(path, { recursive: true })
 );
 
-await Promise.all(directoryPromises);
+await Promise.all([...directoryPromises, mkdir("dist")]);
 
 const etcPromises = etc.map((path) =>
   copyFile(join(src, path), join(dist, path))
