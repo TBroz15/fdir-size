@@ -1,15 +1,19 @@
 {
   "name": "fdir-size",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "⚡ Fastest Directory Size Calculator at Sub-second!",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ci/build",
+    "test": "node ci/build && node ./dist/index",
+    "semantic-release": "semantic-release --branches main",
+    "commit": "git-cz",
+    "lint": "node ci/lint"
   },
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TBroz15/fdir-size.git"
+    "url": "https://github.com/TBroz15/fdir-size.git"
   },
   "keywords": [
     "directory",
@@ -26,5 +30,26 @@
   "bugs": {
     "url": "https://github.com/TBroz15/fdir-size/issues"
   },
-  "homepage": "https://github.com/TBroz15/fdir-size#readme"
+  "homepage": "https://github.com/TBroz15/fdir-size#readme",
+  "dependencies": {
+    "fdir": "^6.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.1.7",
+    "@types/node": "^22.4.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "esbuild": "^0.23.1",
+    "eslint": "^9.9.0",
+    "semantic-release": "^24.1.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

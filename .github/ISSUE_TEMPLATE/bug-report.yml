@@ -1,0 +1,54 @@
+name: 🐞 Bug Report
+description: Is something unexpected happen? A error? A crash? You've come to a right place!
+labels: ["ISSUE/PR: To Be Handled", "TYPE: Bug"]
+title: "[🐞]"
+body:
+  - type: dropdown
+    id: dependency
+    attributes:
+      label: "Is it a dependency(ies) related problem?"
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe
+    attributes:
+      label: "Describe the bug"
+      description: "It had to be clear and concise description on what has happend. You can also state if you're willing to send a PR."
+      placeholder: |
+        I am doing this and that happend. I expect the compiler doing this and not doing that... I am willing to send a PR as I can.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      placeholder: |
+        1. Run this function.
+        2. Oopsie doopsie error spotted!
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Additional Information"
+      description: "You could add an error message/stack or thoughts on fixing this issue."
+      placeholder: |
+        Here is my error message
+
+        ```
+        SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+          at JSON.parse (<anonymous>)
+          at ...
+          at ...
+        ```
+
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this issue! We will get that riff-raff bug out right away!

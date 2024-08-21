@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "fdir": "./node_modules/fdir/"
+  }
+}
