@@ -6,6 +6,7 @@ esbuild.log
 dist/fdir-size-*
 
 # GitHub
+assets/
 .github/
 configs/
 CHANGELOG.md
