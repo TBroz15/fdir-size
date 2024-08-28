@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/TBroz15/fdir-size/compare/v1.0.1...v1.0.2) (2024-08-28)
+
+
+### Bug Fixes
+
+* **dep:** :arrow_up: upgrade fdir to 6.3.0 ([489ce85](https://github.com/TBroz15/fdir-size/commit/489ce8509d641047bb8d81a4ce6ecae967614367))
+
 ## [1.0.1](https://github.com/TBroz15/fdir-size/compare/v1.0.0...v1.0.1) (2024-08-21)
 
 
