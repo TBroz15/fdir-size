@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "node ci/build",
-    "test": "node ci/build && node ./dist/index",
+    "test": "node ci/build && node ./dist/index && node ./tests/benchmark/test.js",
     "semantic-release": "semantic-release --branches main",
     "commit": "git-cz",
     "lint": "node ci/lint"
@@ -40,6 +40,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^10.1.7",
     "@types/node": "^22.4.1",
+    "benny": "^3.7.1",
     "cz-conventional-changelog": "^3.3.0",
     "esbuild": "^0.23.1",
     "eslint": "^9.9.0",

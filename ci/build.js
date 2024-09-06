@@ -3,6 +3,7 @@ import esbuild from "esbuild";
 import { basename, extname, join } from "path";
 import { fdir } from "fdir";
 import { copyFile, mkdir } from "fs/promises";
+import { existsSync } from "fs";
 
 const src = "./src";
 const dist = "dist";
@@ -47,7 +48,9 @@ const directoryPromises = directories.map((path) =>
   mkdir(path, { recursive: true })
 );
 
-await Promise.all([...directoryPromises, mkdir("dist")]);
+if (!existsSync("dist")) await mkdir("dist");
+
+await Promise.all([...directoryPromises]);
 
 const etcPromises = etc.map((path) =>
   copyFile(join(src, path), join(dist, path))
