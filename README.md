@@ -22,7 +22,7 @@
 
 ### Prerequisites
 
-- NodeJS Current LTS 14 or above
+- NodeJS 14.14.0 or above
 - Any JS package manager
 
 ```typescript
