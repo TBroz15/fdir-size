@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/TBroz15/fdir-size/compare/v1.0.2...v1.0.3) (2024-09-06)
+
+
+### Performance Improvements
+
+* :zap: add warmup for faster first run ([eebbef3](https://github.com/TBroz15/fdir-size/commit/eebbef39f042fcd5b3507786acfd0cf5eb212658))
+
 ## [1.0.2](https://github.com/TBroz15/fdir-size/compare/v1.0.1...v1.0.2) (2024-08-28)
 
 
