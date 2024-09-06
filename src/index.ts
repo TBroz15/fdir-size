@@ -9,7 +9,7 @@ const sumSizes = (current: number, size: number) => current + size;
 const fn = async (path: string) => {
   const files = await fdir.crawl(path).withPromise();
 
-  const promises = files.map(getFileSize) as Promise<number>[];
+  const promises = files.map(getFileSize);
 
   const size = (await Promise.all(promises)).reduce(sumSizes, 0);
 
